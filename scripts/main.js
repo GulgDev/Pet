@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.querySelector("#main-canvas");
 
-    let pet = new Pet(canvas, localStorage.getItem("character") || "default");
+    let pet = new Pet(canvas, new URL(location).searchParams.get("character") || localStorage.getItem("character") || "default");
 
     const characterList = document.querySelector("#characters-list");
 
