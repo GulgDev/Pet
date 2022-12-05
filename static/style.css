@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+#main-canvas {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#actions {
+    position: fixed;
+    left: 0;
+    width: 8em;
+    top: 0;
+    bottom: 0;
+}
+
+#actions > * {
+    margin: 2em;
+}
+
+#characters {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -8em;
+    transition: bottom 500ms;
+}
+
+#characters:hover {
+    bottom: 0;
+}
+
+#characters-label {
+    background-color: #EEEEEE;
+    border-color: #888888;
+    margin-left: 2em;
+    padding: 0.5em;
+    width: 6em;
+    height: 1em;
+    text-align: center;
+}
+
+#characters-list {
+    background-color: #EEEEEE;
+    border-color: #888888;
+    height: 8em;
+    overflow-x: scroll;
+}
+
+.character-icon {
+    margin: 1em;
+}
